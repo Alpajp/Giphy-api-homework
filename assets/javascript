@@ -1,0 +1,9 @@
+$("#cat-button").on("click", function() {
+
+    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=ABH0dPYY0HJy3oI1mmotXqQQrcFlSDXhABH0dPYY0HJy3oI1mmotXqQQrcFlSDXh;
+
+    $.ajax({
+        url: quaryURL
+        method: "get"
+    })
+})
