@@ -2,30 +2,66 @@
 <html lang="en">
 
 <head>
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+     <script type="text/javascript"></script>
 
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">>
 
 <link rel="stylesheet" 
 
 <link rel="stylesheet" href="assets/css/style.css">
-<title>GIPHY API Homework</title>
+<title>GIPHY API</title>
 </head> 
 
 <body>
-        <button id="gifButtonsView" class="container">
-            </button>
-            <div id="images">
+
+           <h1>API Project</h1>>
+           <img id="gif" src="" />
+           <button onclick="getGiphyData()">Find a Gif</button>
+
+           <script>
+           function getGiphydata(){
+            // Fetch giphy data from the giphy API
+            var url = 'https://api.giphy.com/v1/gifs/search?api_key=ABH0dPYY0HJy3oI1mmotXqQQrcFlSDXh&q=animal'
+
+            fetch(url)
+            .then( data => data.jason() )
+            .then( res => {
+                console.log(res)
+            })
+            .catch( error => console.log(error))
+            // pick a random gif from the search term we choose
+            // Make that gif appear on the page
+           }
+           </script>
                 
+        </body>
+
+            <!-- This is the form to add an Annimals button to the array. -->
+<form>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" id="Animal" class="form-control" placeholder="Add Animal...">
             </div>
+            <input id="Animal" type="submit" class="btn btn-success" value="MAKE IT SO #1!">
+            <!-- If there are any error messages, they will appear here -->
+            <span id="entry" style="color: white; background: red"></span>
+        </div>
+    </form>
+    
+    <!-- This is where the ratings and images will be shown when the user clicks a movie button. --> 
+    <div id="ratings"></div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="assets/javascript"></script>
 </body>
 </html>
