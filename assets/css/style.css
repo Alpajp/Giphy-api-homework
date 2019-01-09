@@ -1,0 +1,22 @@
+body {
+    background: black;
+}
+
+hr {
+    margin-top: 5px;
+    background: white;
+    height: 10px;
+}
+
+#container {
+    background-image: url(../images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    height: 200px;
+    background-size: 100% 300%;
+    margin: 0;
+}
+
+
+
+
