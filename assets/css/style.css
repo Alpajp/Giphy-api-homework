@@ -17,6 +17,14 @@ hr {
     margin: 0;
 }
 
+#giphyDiv {
+    color: white;
+}
+
+.topicDiv {
+    float: left;
+    margin: 0 10px;
+}
 
 
 
