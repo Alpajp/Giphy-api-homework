@@ -1,2 +1,5 @@
-# Giphy-api-homework
-3rd week homework
+# Gig Tastic
+
+
+Application that uses the GIPHY API to make a dynamic web page that populates with gifs of your choice.
+
