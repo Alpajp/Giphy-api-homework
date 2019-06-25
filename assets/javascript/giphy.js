@@ -1,4 +1,4 @@
-var topics = ["cats", "dogs", "chicken", "rabits", "pranks", "basketball", "jump", "fall"];
+var topics = ["Cats", "Puppies", "Chicken", "Rabits", "Zebras", "Basketball", "Jump", "Fall"];
 
 renderButtons();
 
